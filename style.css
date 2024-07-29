@@ -70,15 +70,16 @@ body {
 
 header {
     display: flex;
-    position: sticky;
+    position: relative;
     top: 0;
     flex-direction: column;
     align-items: center;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    background-color: none;
-    background-image: url(file:///Users/eugenepivovarov/Desktop/Frontend/Shelter/images/start-screen-background.jpg);
+    background-color: transparent;
+    margin-bottom: -120px;
+    
     
 }
 
@@ -138,9 +139,10 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url(file:///Users/eugenepivovarov/Desktop/Frontend/Shelter/images/start-screen-background.jpg);
+    background-image: url(images/start-screen-background.jpg);
     background-size: cover;
     background-position: center;
+    margin-top: 120px;
 
 }
 .main_screen_content {
@@ -567,7 +569,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-image: url(file:///Users/eugenepivovarov/Desktop/Frontend/Shelter/images/footer-background.png);
+    background-image: url(images/footer-background.png);
     background-size: cover;
     background-position: center;
 }
