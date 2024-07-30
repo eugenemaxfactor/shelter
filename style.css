@@ -142,7 +142,6 @@ main {
     background-image: url(images/start-screen-background.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: 120px;
 
 }
 .main_screen_content {
@@ -154,7 +153,8 @@ main {
     height: 100%;
     z-index: 4;
     padding: 0px 40px 0px;
-    margin-top: 90px;
+    margin-top: 200px;
+    
 
 
 }
