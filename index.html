@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>shelter</title>
+    <title>Shelter</title>
 </head>
 <body>
     <header>
         <div class="header">
-            <div class="logo">
+            <div class="logo" onclick="window.location.href = '#no_scroll'">
                 <h1>Cozy house</h1>
                 <p class="subtitle">Shelter for pets in Boston</p>
             </div>
-            <div class="nav-menu">
-                <div class="link_nav_hover"><a class="link_nav" href="#aboutTheSchelter">About the shelter</a></div>
-            <div class="link_nav_hover"><a class="link_nav" href="#ourPets">Our pets</a></div>
-            <div class="link_nav_hover"><a class="link_nav" href="#helpTheShelter">Help the shelter</a></div>
-            <div class="link_nav_hover"><a class="link_nav" href="#footerContacts">Contacts</a></div>
-            </div>
+            <nav class="nav-menu"> <ul>
+            <li class="link_nav_hover nav_active"><a class="link_nav link_nav_active" href="/index.html">About the shelter</a></li>
+            <li class="link_nav_hover"><a class="link_nav" href="OurPets/ourpets.html">Our pets</a></li>
+            <li class="link_nav_hover"><a class="link_nav" href="#helpTheShelter">Help the shelter</a></li>
+            <li class="link_nav_hover"><a class="link_nav" href="#footerContacts">Contacts</a></li>
+            </ul></nav>
         </div>
     </header>
     <main>
@@ -27,7 +28,7 @@
                 <div class="screen_content">
                     <h2>Not only people <br> need a house</h2>
                     <p class="weoffer">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <button class="makeafriend">Make a friend</button>
+                    <button class="makeafriend" onclick="window.location.href = '#ourPets'">Make a friend</button>
                 </div>
                 <div class="main_screen_image">
                 <img class="main_screen_puppy" src="images/start-screen-puppy.png" alt="Description of the image">
@@ -48,7 +49,7 @@
         </section>
         <section class="pets" id="ourPets">
             <div class="pets_content">
-                <h3>Our friends who are looking for a house</h3>
+                <h3>Our friends who<br>are looking for a house</h3>
                 <div class="slider">
                     <div class="button_arrow">
                         <img class="arrow_image" src="images/arrow_left.svg" alt="arrow_left">
@@ -72,7 +73,7 @@
                         <img class="arrow_image" src="images/arrow_right.svg" alt="arrow_right">
                     </div>
                 </div>
-                <button class="get_to_know">Get to know the rest</button>
+                <button class="get_to_know" onclick="window.location = 'OurPets/ourpets.html'">Get to know the rest</button>
             </div>
         </section>
         <section class="help" id="helpTheShelter">
@@ -130,7 +131,7 @@
                 <div class="donation_content_content">
                     <h3>You can also <br>make a donation</h3>
                     <h5>Name of the bank / Type of bank account</h5>
-                    <div class="credit_card">
+                    <div class="credit_card" onclick="window.location.href = '#noScroll'">
                         <img src="images/Icons/credit-card.svg" alt="credit_card icon" class="credit_card_icon">
                         <p class="credit_number">8380 2880 8028 8791 7435</p>
                     </div>
