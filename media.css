@@ -1,0 +1,287 @@
+@media (max-width: 1240px) {
+    
+    
+
+
+    .main_screen_image {
+        max-width: 569px;
+        max-height: 593px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .about_content {
+        flex-direction: column-reverse;
+    }
+
+    .slider > :nth-last-child(2) {
+    display: none;
+    }
+
+    .help_you_row {
+        flex-wrap: wrap;
+    }
+
+    .screen_content {
+        gap: 42px;
+    }
+
+    .makeafriend {
+        margin: 0 auto;
+    }
+    
+
+}
+
+
+@media (max-width: 992px) {
+    
+    .footer_content {
+        justify-content: center;
+        row-gap: 65px;
+        column-gap: 60px;
+    }
+
+    .donation_content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .donation_content_content {
+        min-width: 350px;
+    }
+
+    .main_screen_content {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+
+ 
+
+}
+
+
+/*.burger-menu {
+    position: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #F6F6F6;
+}
+
+.line-1 {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+}*/
+
+@media (max-width: 768px) {
+
+    .pets_content {
+        padding: 80px 30px 100px;
+    }
+
+}
+
+@media (max-width: 765px) {
+     .slider > :nth-last-child(3) {
+        display: none;
+    }
+
+    .how_can_I_help_you > h3 {
+        text-align: center;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        }  
+        
+        .line-1 {
+        position: flex;
+        width: 100%;
+        height: 2px;
+        background-color: #F1CDB3;
+        }
+
+
+}
+
+
+
+
+@media (max-width: 576px) {
+
+.header {
+    padding: 30px 20px;
+}
+    
+.main_screen_image {
+    max-width: 260px;
+    max-height: 272px;
+}
+
+.main_screen_content {
+    padding: 0 20px 0;
+}
+
+.slider > * {
+    display: none; 
+}
+
+.slider {
+    justify-content: center;
+}
+
+.slider > :nth-child(2) {
+    display: flex; 
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+
+}
+
+h5 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.weoffer {
+    text-align: center;
+    
+    
+}
+
+.about_content {
+    gap: 60px;
+    padding: 40px 20px;
+}
+
+.pets_content {
+    padding: var(--media-padding);
+}
+ 
+.about_content_pets_image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.how_can_I_help_you {
+    padding: var(--media-padding);
+}
+
+
+.donation_content_image {
+    width: 260px;
+    height: 135px;
+}
+
+.donation {
+    padding: var(--media-padding);
+} 
+
+.credit_card {
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 13px;
+    gap: 13px;
+}
+
+.credit_number {
+    font-size: 15px;
+    letter-spacing: 1px;;
+}
+
+.footer_content {
+    padding: 30px 10px 0px  ;
+    row-gap: 40px;
+}
+
+.footer_title {
+    text-align: center;
+}
+
+.footer_content_contacts {
+    row-gap: 40px;
+}
+
+.footer_contact {
+    justify-content: center;
+}
+
+.footer_puppy {
+    max-width: 260px;
+    max-height: 269px;
+}
+
+.mobile-arrows {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 270px;
+    width: 100%;
+    margin-top: -20px;
+
+}
+
+.donation_content_content {
+    min-width: 100%;
+}
+
+.help_you_row {
+    gap: 30px;
+}
+
+}
+
+@media (max-width: 400px) {
+
+    .how_can_I_help_you {
+        padding: 42px 10px;
+    }
+    
+    .help_you_row {
+        column-gap: 10px;
+        
+    }
+
+    .grid_card {
+        min-width: 130px;
+    }
+
+    .grid_card > h4 {
+        letter-spacing: 0;
+    }
+
+    .main_screen_content {
+        padding: 0 10px 0;
+    }
+
+    .screen_content > p {
+        text-align: center;
+        letter-spacing: 0.1px;
+    }
+
+}
+

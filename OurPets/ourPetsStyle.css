@@ -92,12 +92,13 @@ header {
 }
 
 .header {
-width: var(--page-width);
+max-width: var(--page-width);
+width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 padding: 30px 40px;
-align-items: stretch;
+align-items: center;
 }
 
 .nav-menu > ul {
@@ -114,7 +115,7 @@ align-items: stretch;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -131,19 +132,23 @@ align-items: stretch;
     font-family: Arial;
     color: var(--color-primary);
     font-size: 13px;
-    line-height: 0px;
+    line-height: 15px;
     font-style: normal;
     font-weight: 300;
     text-decoration: none;
     color: #292929;
     letter-spacing: 1px;
-    line-height: 0px;
     transition: all 0.3s ease-in-out;
 }
 
 .logo:hover h1,
 .logo:hover .subtitle {
     color: var(--color-primary);
+}
+
+.burger-menu {
+    
+    display: none;
 }
 
 h1 {
@@ -236,7 +241,7 @@ main {
 }
 
 .pets_content{
-    width: var(--page-width);
+    max-width: var(--page-width);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,27 +393,41 @@ footer {
 
 }
 
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    max-width: var(--page-width);
+    width: 100%;
+    padding: 40px 40px 0px;
+    flex-wrap: wrap;
+
+}
+
 .footer_content_contacts {
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: flex-start;
     gap: 20px;
+    min-width: 280px;
 }
+
 
 .footer_contact {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     min-height: 55px;
 
 }
 
 .footer_puppy {
-    width: 300px;
-    height: 310px;
+    max-width: 300px;
+    max-height: 310px;
 }
 
 .footer_title {
@@ -436,4 +455,5 @@ footer {
     text-align: center;
 
 }
+
 

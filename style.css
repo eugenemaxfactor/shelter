@@ -1,13 +1,16 @@
 :root {
     --page-width: 1280px;
     --block-padding: 80px 40px 100px;
+    --media-padding: 40px 20px;
     --color-button: #F1CDB3;
     --font-georgia: Georgia;
+    --font-arial: Arial;
     --font-color-dark: #545454;
     --border-radius-100: 100px;
     --color-primary: #F1CDB3;
     --color-primary-light: #FDDCC4;
     --background-color-lightgrey: #F6F6F6;
+
 }
 
 html {
@@ -43,6 +46,10 @@ transition: border-color 0.3s ease;
     border-color: var(--color-primary);
 }
 
+.burger-menu {
+    position: relative;
+    display: none;
+}
 
 
 .link_nav {
@@ -60,7 +67,6 @@ transition: border-color 0.3s ease;
 .link_nav:hover {
     color: #FFFFFF;
     transition: all 0.3s ease-in-out;
-
 }
 
 
@@ -95,12 +101,13 @@ header {
 }
 
 .header {
-width: var(--page-width);
+max-width: var(--page-width);
+width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-padding: 30px 40px;
-align-items: stretch;
+padding: 30px 30px;
+align-items: center;
 }
 
 .nav-menu > ul {
@@ -118,23 +125,25 @@ align-items: stretch;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    gap: 15px;  
+    gap: 10px;  
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    min-height: 50px;
 }
 
-.subtitle {
+.logo > p {
     font-family: Arial;
     color: var(--color-primary);
     font-size: 13px;
-    line-height: 0px;
+    line-height: 15px;
     font-style: normal;
     font-weight: 300;
     text-decoration: none;
     color: #FFFFFF;
     letter-spacing: 1px;
-    line-height: 0px;
+    height: 15px;
     transition: all 0.3s ease-in-out;
+    
 }
 
 .logo:hover h1 {
@@ -166,7 +175,8 @@ main {
 
 }
 .main_screen_content {
-    width: var(--page-width);
+    max-width: var(--page-width);
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -185,6 +195,7 @@ main {
     justify-content: center;
     align-items: left;
     max-width: 460px;
+    min-width: auto;
     gap: 30px;
 }
 
@@ -214,7 +225,7 @@ h2 {
     font: normal;
     font-family: var(--font-georgia);
     color: white;
-    letter-spacing: 0%;
+    letter-spacing: 0.06em;
     font-size: 44px;
     font-weight: 300;
     line-height: 130%;
@@ -232,6 +243,7 @@ h3 {
     font-weight: 300;
     padding: 0;
     margin: 0;
+    letter-spacing: 0.06em;
 
 }
 
@@ -247,6 +259,7 @@ h4 {
     white-space: normal;
     padding: 0;
     margin: 0;
+    letter-spacing: 0.06em;
     }
 
 h5 {   
@@ -258,17 +271,20 @@ h5 {
     font-weight: 300;
     padding: 0;
     margin: 0;
+    letter-spacing: 0.06em;
 
 
 }
 
-.weoffer{
+.screen_content > p {
     color: #CDCDCD;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 160%;
     font-style: normal;
     font-weight: 300;
+    letter-spacing: 1px;
+    text-wrap: wrap;
 
 }
 
@@ -293,13 +309,13 @@ h5 {
 }
 
 .main_screen_image{
-    width: 698px;
-    height: 728px;
+    max-width: 698px;
+    max-height: 728px;
 }
 
-.main_screen_puppy{
-    height: 728px;
-    width: 698px;
+.main_screen_puppy {
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -311,7 +327,8 @@ h5 {
 }
 
 .about_content {
-    width: var(--page-width);
+    max-width: var(--page-width);
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -322,7 +339,7 @@ h5 {
 }
 
 .about_content_content_subheading{
-    font-family: var(--font-georgia);
+    font-family: var(--font-arial);
     color: var(--font-color-dark);
     font-size: 15px;
     line-height: 160%;
@@ -333,8 +350,8 @@ h5 {
 }
 
 .about_content_pets_image{
-    width: 300px;
-    height: 408px;
+    max-width: 300px;
+    max-height: 408px;
 }
 
 .about_content_content {
@@ -355,7 +372,8 @@ h5 {
 }
 
 .pets_content{
-    width: var(--page-width);
+    max-width: var(--page-width);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,8 +388,9 @@ h5 {
 .slider {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -386,8 +405,6 @@ h5 {
     background-color: #FAFAFA;
     border-radius: 9px;
     padding-bottom: 30px;
-    margin-left: 45px;
-    margin-right: 45px;
     transition: border-color 0.3s ease;
     
     
@@ -445,6 +462,10 @@ h5 {
     border-color: var(--color-primary-light);
 }
 
+.mobile-arrows {
+    display: none;
+}
+
 .get_to_know {
     max-width: 261px;
     width: 100%;
@@ -482,6 +503,7 @@ h5 {
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
+    width: 100%;
 }
 
 .how_can_I_help_you {
@@ -489,13 +511,14 @@ h5 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: var(--page-width);
+    max-width: var(--page-width);
     padding: var(--block-padding);
     gap: 60px;
+    width: 100%;
 }
 
 .help_you {
-    max-width: var(--page-width);
+    max-width: 1026px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -503,16 +526,19 @@ h5 {
     justify-content: space-between;
     /*padding: 0px 127px 0px;*/
     /*gap: 55px;*/
-    height: 281px;
+    /*height: 281px;*/
 }
 
 .help_you_row {
+
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    max-width: var(--page-width);
     width: 100%;
-    gap: 120px
-
+    column-gap: 70px;
+    row-gap: 55px;
 }
 
 .grid_card {
@@ -521,6 +547,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    min-width: 145px;
     height: 115px;
 }
 
@@ -545,29 +572,35 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     max-width: var(--page-width);
     width: 100%;
-    gap: 30px;
+    gap: 60px;
 
 }
 
 .donation_content_content {
-    width: 380px;
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: start;
     gap: 20px;
+    max-width: 380px;
 }
 
 .donation_content_image {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-height: 261px;
+    max-width: 505px;
+
 }
 
 .donation_content_image_dog {
-    height: 261px;
-    width: 505px;
+    width: 100%;
+    height: 100%;
+ 
 }
 
 .credit_card {
@@ -590,12 +623,20 @@ h5 {
     font-family: var(--font-georgia);
     font-size: 12px;
     font-style: italic;
-    line-height: 118%;
+    line-height: 18px;
     color: #B2B2B2;
     padding: 0;
     margin: 0;
     text-align: justify;
+    white-space: pre-wrap;
 
+}
+
+.credit_number {
+    font-family: var(--font-georgia);
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: var(--font-color-dark);
 }
 
 footer {
@@ -618,6 +659,7 @@ footer {
     max-width: var(--page-width);
     width: 100%;
     padding: 40px 40px 0px;
+    flex-wrap: wrap;
 
 }
 
@@ -627,21 +669,22 @@ footer {
     align-items: left;
     justify-content: flex-start;
     gap: 20px;
+    min-width: 280px;
 }
 
 .footer_contact {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     min-height: 55px;
 
 }
 
 .footer_puppy {
-    width: 300px;
-    height: 310px;
+    max-width: 300px;
+    max-height: 310px;
 }
 
 .footer_title {
